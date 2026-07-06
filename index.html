@@ -1,232 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gaston Security Contracting — Memphis locksmith and physical security</title>
+<meta name="description" content="Locksmith, access control, and low-voltage security work across the Memphis metro. Same guy answers the phone and shows up. Insured and bonded.">
+<meta name="theme-color" content="#B23A20">
 
-<!-- ===== EDIT THESE ===== -->
-<title>Gaston Security Contracting | Locksmith &amp; Physical Security &middot; Memphis Metro</title>
-<meta name="description" content="Residential and commercial locksmith and physical security across the Memphis metro. Insured, bonded, 24/7 emergency response.">
-<link rel="canonical" href="https://YOURDOMAIN.com/">
-<meta property="og:title" content="Gaston Security Contracting">
-<meta property="og:description" content="Residential &amp; commercial locksmith and physical security, Memphis metro. 24/7 emergency response.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://YOURDOMAIN.com/">
-<meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#5A1326">
+<meta property="og:title" content="Gaston Security Contracting — Memphis locksmith">
+<meta property="og:description" content="Locksmith and physical security work across the Memphis metro. I pick up. I show up. I fix it.">
+<meta property="og:url" content="https://gaston-security.com">
+<meta property="og:site_name" content="Gaston Security Contracting">
 
-<!-- Inline SVG favicon (fleur-de-lis) - no separate file needed -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C9A227' d='M12 2.2c-1.3 1.7-1.6 3.5-.9 5.2-1.5-.9-3.3-.3-3.3 1.4 0 1.3 1 2.1 2.2 2.2-1.4.3-2.5 1.3-2.5 2.9 0 1.6 1.3 2.8 2.9 2.8v1.1c-1.8 0-3.1.6-3.1 1.8h8.2c0-1.2-1.3-1.8-3.1-1.8v-1.1c1.6 0 2.9-1.2 2.9-2.8 0-1.6-1.1-2.6-2.5-2.9 1.2-.1 2.2-.9 2.2-2.2 0-1.7-1.8-2.3-3.3-1.4.7-1.7.4-3.5-.9-5.2z'/%3E%3C/svg%3E">
-
-<!-- Tabler icon webfont: version pinned + verified path. For production, self-host instead (see notes). -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.44.0/dist/tabler-icons.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap">
 
-<!-- Local SEO: structured data. Fill in real values. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%23B23A20'/%3E%3Ccircle cx='9' cy='12' r='3' fill='none' stroke='%23F5EDD8' stroke-width='1.6'/%3E%3Cpath d='M12 12h8M17 12v3M20 12v3' stroke='%23F5EDD8' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Locksmith",
   "name": "Gaston Security Contracting",
-  "image": "https://YOURDOMAIN.com/og-image.jpg",
-  "url": "https://YOURDOMAIN.com/",
+  "url": "https://gaston-security.com",
   "telephone": "+19015550142",
-  "email": "you@YOURDOMAIN.com",
   "priceRange": "$$",
-  "description": "Residential and commercial locksmith and physical security services in the Memphis metro.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "YOUR STREET",
-    "addressLocality": "Germantown",
+    "addressLocality": "Memphis",
     "addressRegion": "TN",
-    "postalCode": "YOUR ZIP",
     "addressCountry": "US"
   },
-  "areaServed": "Memphis metropolitan area",
+  "areaServed": [
+    "Memphis, TN", "Germantown, TN", "Collierville, TN", "Bartlett, TN",
+    "Cordova, TN", "Lakeland, TN", "Arlington, TN", "Millington, TN"
+  ],
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
     "opens": "00:00",
     "closes": "23:59"
-  },
-  "sameAs": ["YOUR GOOGLE BUSINESS PROFILE URL", "YOUR FACEBOOK URL"]
+  }
 }
 </script>
 
 <style>
-  :root{
-    --burgundy:#5A1326; --gold:#C9A227; --gold-lt:#E6C765; --gold-dk:#3A2A00;
-    --cream:#FBF9F5; --surface:#F4F1EC; --white:#FFFFFF;
-    --ink:#2A2320; --ink2:#6B635C; --ink3:#9A938C;
-    --line:rgba(0,0,0,0.12); --line2:rgba(0,0,0,0.20);
-    --serif:'Playfair Display',Georgia,serif;
-    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-    --r-md:8px; --r-lg:12px;
-  }
-  *{box-sizing:border-box;}
-  body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased;}
-  .wrap{max-width:1000px;margin:0 auto;padding:24px 20px 48px;}
-  a{text-decoration:none;}
-  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
-  h1,h2{font-family:var(--serif);font-weight:500;margin:0;}
-  .skip{position:absolute;left:-9999px;}
-  .skip:focus{left:8px;top:8px;background:#fff;padding:8px 12px;border-radius:var(--r-md);z-index:10;}
-  .fdl{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor;}
-  .hero,.cta{background:var(--burgundy);color:#fff;}
-  .hero{border-radius:var(--r-lg);padding:20px 24px 40px;border-top:4px solid var(--gold);}
-  .nav{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:.5px solid rgba(255,255,255,.15);padding-bottom:14px;margin-bottom:32px;}
-  .brand{display:flex;align-items:center;gap:10px;}
-  .brand .mark{width:36px;height:36px;border-radius:var(--r-md);background:rgba(201,162,39,.16);display:flex;align-items:center;justify-content:center;color:var(--gold-lt);font-size:20px;}
-  .brand .name{font-family:var(--serif);font-size:17px;font-weight:600;letter-spacing:.3px;}
-  .nav-links{display:flex;align-items:center;gap:20px;font-size:14px;flex-wrap:wrap;}
-  .nav-links a{color:rgba(255,255,255,.82);}
-  .btn-gold{background:var(--gold);color:var(--gold-dk);padding:7px 14px;border-radius:var(--r-md);font-weight:500;display:inline-flex;align-items:center;gap:6px;}
-  .hero-body{max-width:600px;}
-  .eyebrow{display:inline-flex;align-items:center;gap:7px;color:var(--gold-lt);font-size:12px;font-weight:500;letter-spacing:.5px;margin-bottom:14px;}
-  .hero h1{font-size:38px;line-height:1.12;color:#fff;margin-bottom:14px;}
-  .hero p.lead{font-size:16px;color:rgba(255,255,255,.86);margin:0 0 10px;}
-  .motto{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--gold-lt);margin:0 0 24px;}
-  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;}
-  .btn-lg{padding:12px 22px;border-radius:var(--r-md);font-weight:500;font-size:15px;display:inline-flex;align-items:center;gap:6px;border:none;cursor:pointer;}
-  .btn-gold-lg{background:var(--gold);color:var(--gold-dk);}
-  .btn-ghost{background:transparent;color:#fff;border:.5px solid rgba(255,255,255,.4);}
-  .trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 8px;}
-  .trust div{background:var(--surface);border-radius:var(--r-md);padding:14px 16px;text-align:center;}
-  .trust .ic{font-size:22px;color:#8A1B33;}
-  .trust .t{font-size:14px;font-weight:500;margin-top:4px;}
-  .trust .s{font-size:12px;color:var(--ink2);}
-  .divide{display:flex;align-items:center;gap:14px;margin:28px 0;color:var(--gold);}
-  .divide span{flex:1;height:.5px;background:var(--line2);}
-  .divide .fdl{font-size:20px;}
-  .sec-h{font-size:20px;margin:0 0 4px;}
-  .sec-sub{font-size:14px;color:var(--ink2);margin:0 0 18px;}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
-  .card{background:var(--white);border:.5px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;}
-  .card .tile{width:38px;height:38px;border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:12px;}
-  .tile.pink{background:#FBEAF0;color:#72243E;}
-  .tile.amber{background:#FAEEDA;color:#633806;}
-  .tile.coral{background:#FAECE7;color:#712B13;}
-  .card .ct{font-weight:500;font-size:15px;}
-  .card p{font-size:13px;color:var(--ink2);line-height:1.6;margin:6px 0 0;}
-  .why{background:var(--surface);border-radius:var(--r-lg);padding:24px;margin:0 0 28px;}
-  .why h2{font-size:20px;margin-bottom:16px;}
-  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
-  .why-item{display:flex;gap:12px;}
-  .why-item i{color:var(--gold);font-size:20px;flex-shrink:0;}
-  .why-item .h{font-weight:500;font-size:14px;}
-  .why-item p{font-size:13px;color:var(--ink2);margin:2px 0 0;line-height:1.6;}
-  .cta{border-radius:var(--r-lg);padding:32px 28px;border-left:4px solid var(--gold);}
-  .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;}
-  .cta h2{font-size:22px;color:#fff;margin:6px 0 8px;}
-  .cta .blurb{font-size:14px;color:rgba(255,255,255,.84);margin:0 0 16px;}
-  .cta .call{display:inline-flex;align-items:center;gap:8px;color:var(--gold-lt);font-size:18px;font-weight:500;}
-  form .row{margin-bottom:12px;}
-  form label{display:block;font-size:13px;color:rgba(255,255,255,.85);margin-bottom:4px;}
-  form input,form textarea{width:100%;padding:10px 12px;border-radius:var(--r-md);border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.95);color:var(--ink);font-family:inherit;font-size:14px;}
-  .hp{position:absolute;left:-9999px;}
-  .privacy{font-size:11px;color:rgba(255,255,255,.6);margin-top:8px;}
-  .foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:20px 0 8px;font-size:12px;color:var(--ink3);}
-  .foot .fl{display:inline-flex;align-items:center;gap:6px;}
-  @media (max-width:560px){.hero h1{font-size:30px;}.cta-grid{grid-template-columns:1fr;}}
+:root {
+  --rust: #B23A20;
+  --rust-dark: #8F2E19;
+  --mustard: #E5A234;
+  --mustard-light: #FCE4B0;
+  --espresso: #2A1B12;
+  --cream: #F5EDD8;
+  --cream-light: #FCF6E4;
+  --warm-brown: #3D2817;
+  --warm-brown-muted: #7A5232;
+  --border-cream: #D9C89A;
+  --white: #FFFFFF;
+  --deep: #2A1B12;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--warm-brown);
+  background: var(--cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, .display {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  color: var(--espresso);
+  margin: 0;
+  line-height: 1.1;
+}
+p { margin: 0; }
+a { color: var(--rust); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--espresso); color: var(--cream);
+  padding: 8px 12px; border-radius: 4px;
+  z-index: 100;
+}
+.skip-link:focus { left: 12px; top: 12px; }
+
+.eyebrow {
+  font-size: 12px;
+  color: var(--warm-brown-muted);
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.icon { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 12px 22px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.06s ease;
+}
+.btn:hover { text-decoration: none; }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--rust); color: var(--cream); }
+.btn-primary:hover { background: var(--rust-dark); color: var(--cream); }
+.btn-mustard { background: var(--mustard); color: var(--espresso); }
+.btn-mustard:hover { background: #d1911e; color: var(--espresso); }
+.btn-outline { background: transparent; color: var(--espresso); border-color: var(--espresso); }
+.btn-outline:hover { background: var(--espresso); color: var(--cream); }
+.btn-outline-light { background: transparent; color: var(--cream); border-color: var(--cream); }
+.btn-outline-light:hover { background: var(--cream); color: var(--rust); }
+
+/* Header */
+.site-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 24px;
+  background: var(--cream);
+  border-bottom: 0.5px solid var(--border-cream);
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-mark {
+  width: 34px; height: 34px; border-radius: 6px;
+  background: var(--rust); color: var(--cream);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.brand-mark svg { width: 18px; height: 18px; }
+.brand-name {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 18px; font-weight: 500;
+  color: var(--espresso);
+  letter-spacing: 0.2px;
+}
+.nav-links { display: flex; align-items: center; gap: 20px; font-size: 14px; color: var(--espresso); }
+.nav-links a { color: var(--espresso); }
+.nav-links .btn-mustard { padding: 8px 14px; font-size: 14px; }
+
+/* Hero */
+.hero { padding: 56px 24px 60px; }
+.hero .badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--mustard-light);
+  color: var(--warm-brown-muted);
+  font-size: 11px; letter-spacing: 0.5px;
+  padding: 4px 10px; border-radius: 4px;
+  margin-bottom: 20px;
+}
+.hero h1 { font-size: 54px; max-width: 620px; margin-bottom: 20px; }
+.hero .sub { font-size: 16px; color: var(--warm-brown); max-width: 540px; margin-bottom: 28px; }
+.hero-ctas { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* How I work */
+.how { padding: 44px 24px; background: var(--white); border-top: 0.5px solid var(--border-cream); }
+.how h2 { font-size: 30px; margin-bottom: 28px; }
+.how-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+.step-num {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 56px; color: var(--rust); font-weight: 500;
+  line-height: 1; margin-bottom: 10px;
+}
+.step-title { font-size: 16px; font-weight: 500; color: var(--espresso); margin-bottom: 4px; }
+.step-body { font-size: 14px; color: var(--warm-brown); line-height: 1.55; }
+
+/* Services */
+.services { padding: 44px 24px; }
+.services h2 { font-size: 30px; margin-bottom: 24px; }
+.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.service-card {
+  background: var(--white);
+  padding: 20px 22px;
+  border-radius: 8px;
+  border: 0.5px solid var(--border-cream);
+}
+.icon-badge {
+  width: 38px; height: 38px; border-radius: 6px;
+  background: var(--mustard-light);
+  color: var(--warm-brown-muted);
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-bottom: 12px;
+}
+.icon-badge svg { width: 20px; height: 20px; }
+.service-card h3 { font-family: system-ui, sans-serif; font-size: 16px; font-weight: 500; color: var(--espresso); margin-bottom: 4px; }
+.service-card p { font-size: 14px; color: var(--warm-brown); line-height: 1.5; }
+
+/* About */
+.about {
+  padding: 44px 24px;
+  background: var(--white);
+  border-top: 0.5px solid var(--border-cream);
+  border-bottom: 0.5px solid var(--border-cream);
+}
+.about-grid { display: grid; grid-template-columns: 120px 1fr; gap: 28px; align-items: center; max-width: 900px; margin: 0 auto; }
+.about-avatar {
+  width: 120px; height: 120px; border-radius: 8px;
+  background: var(--rust); color: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Fraunces', Georgia, serif; font-size: 46px; font-weight: 500;
+}
+.about h2 { font-size: 26px; margin-bottom: 10px; }
+.about p { font-size: 15px; color: var(--warm-brown); }
+
+/* Areas */
+.areas { padding: 40px 24px; }
+.areas h2 { font-size: 26px; margin-bottom: 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  background: var(--white);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--espresso);
+  border: 0.5px solid var(--border-cream);
+}
+
+/* Testimonials */
+.testimonials { padding: 44px 24px; background: var(--white); border-top: 0.5px solid var(--border-cream); }
+.testimonials h2 { font-size: 26px; margin-bottom: 20px; }
+.tests-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.testimonial {
+  background: var(--cream);
+  padding: 22px;
+  border-left: 3px solid var(--mustard);
+}
+.stars { color: var(--mustard); font-size: 14px; letter-spacing: 3px; margin-bottom: 10px; }
+.quote {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 16px; line-height: 1.5;
+  color: var(--espresso);
+  margin-bottom: 14px;
+}
+.attribution { font-size: 12px; color: var(--warm-brown-muted); }
+
+/* Quote form */
+.quote-section { padding: 48px 24px; background: var(--cream); }
+.quote-section h2 { font-size: 30px; margin-bottom: 8px; }
+.quote-section .lead { font-size: 15px; color: var(--warm-brown); margin-bottom: 28px; max-width: 520px; }
+.quote-form { max-width: 560px; display: grid; gap: 16px; }
+.field { display: grid; gap: 6px; }
+.field label { font-size: 13px; font-weight: 500; color: var(--espresso); }
+.field input, .field textarea {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-cream);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--espresso);
+  width: 100%;
+}
+.field textarea { resize: vertical; min-height: 90px; }
+.field input:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--rust);
+  box-shadow: 0 0 0 2px rgba(178,58,32,0.15);
+}
+.hp { position: absolute; left: -9999px; top: -9999px; }
+
+/* Big closing CTA */
+.cta { padding: 56px 24px; background: var(--rust); text-align: center; color: var(--cream); }
+.cta .eyebrow { color: #F5D68A; margin-bottom: 10px; }
+.cta h2 { font-size: 40px; color: var(--cream); margin-bottom: 10px; line-height: 1.05; }
+.cta .lead { font-size: 15px; color: var(--mustard-light); margin-bottom: 24px; }
+.cta-ctas { display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+
+/* Footer */
+.footer { padding: 24px; background: var(--espresso); color: var(--border-cream); font-size: 13px; text-align: center; }
+.footer .fine { color: #8B7250; margin-top: 4px; }
+
+/* Mobile */
+@media (max-width: 720px) {
+  .nav-links a:not(.btn) { display: none; }
+  .hero { padding: 40px 24px; }
+  .hero h1 { font-size: 40px; }
+  .how-grid { grid-template-columns: 1fr; gap: 28px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; text-align: center; }
+  .about-avatar { margin: 0 auto; }
+  .tests-grid { grid-template-columns: 1fr; }
+  .cta h2 { font-size: 30px; }
+}
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
 
-<!-- Fleur-de-lis defined once, reused via <use> -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="fdl" viewBox="0 0 24 24"><path d="M12 2.2c-1.3 1.7-1.6 3.5-.9 5.2-1.5-.9-3.3-.3-3.3 1.4 0 1.3 1 2.1 2.2 2.2-1.4.3-2.5 1.3-2.5 2.9 0 1.6 1.3 2.8 2.9 2.8v1.1c-1.8 0-3.1.6-3.1 1.8h8.2c0-1.2-1.3-1.8-3.1-1.8v-1.1c1.6 0 2.9-1.2 2.9-2.8 0-1.6-1.1-2.6-2.5-2.9 1.2-.1 2.2-.9 2.2-2.2 0-1.7-1.8-2.3-3.3-1.4.7-1.7.4-3.5-.9-5.2z"/></symbol></svg>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div class="wrap">
-  <header class="hero">
-    <nav class="nav">
-      <div class="brand">
-        <span class="mark"><svg class="fdl" aria-hidden="true"><use href="#fdl"/></svg></span>
-        <span class="name">Gaston Security Contracting</span>
-      </div>
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#why">About</a>
-        <a href="#quote">Contact</a>
-        <a class="btn-gold" href="tel:+19015550142" aria-label="Call Gaston Security"><i class="ti ti-phone" aria-hidden="true"></i>(901) 555-0142</a>
-      </div>
-    </nav>
-    <div class="hero-body">
-      <span class="eyebrow"><svg class="fdl" aria-hidden="true"><use href="#fdl"/></svg> Bayou roots &middot; Memphis strong</span>
-      <h1>Locked down, looked after, done right.</h1>
-      <p class="lead">Residential and commercial locksmith and physical security across the Memphis metro &ndash; from a single rekey to a full master-key system.</p>
-      <p class="motto">La s&eacute;curit&eacute;, c'est la confiance.</p>
-      <div class="hero-cta">
-        <a class="btn-lg btn-gold-lg" href="#quote">Get a free quote</a>
-        <a class="btn-lg btn-ghost" href="tel:+19015550142"><i class="ti ti-phone" aria-hidden="true"></i>Call now</a>
-      </div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="8" cy="12" r="3"/>
+      <path d="M11 12h9M17 12v3M20 12v3"/>
+    </symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="5" y="11" width="14" height="10" rx="1.5"/>
+      <path d="M8 11V8a4 4 0 0 1 8 0v3"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l7 3v6c0 4-3 7-7 8-4-1-7-4-7-8V6l7-3z"/>
+      <path d="M9 12l2 2 4-4"/>
+    </symbol>
+    <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="6" width="14" height="12" rx="1.5"/>
+      <path d="M17 10l4-2v8l-4-2z"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s7-8 7-13a7 7 0 0 0-14 0c0 5 7 13 7 13z"/>
+      <circle cx="12" cy="9" r="2.5"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand-mark"><svg><use href="#i-key"/></svg></span>
+    <span class="brand-name">Gaston Security</span>
+  </div>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#areas">Areas</a>
+    <!-- REPLACE: real phone number goes in both href and label -->
+    <a class="btn btn-mustard" href="tel:+19015550142">
+      <svg class="icon"><use href="#i-phone"/></svg>Call now
+    </a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="container">
+    <span class="badge"><svg class="icon"><use href="#i-pin"/></svg>Memphis, TN &middot; Answered 24/7</span>
+    <h1>I pick up.<br>I show up.<br>I fix it.</h1>
+    <p class="sub">Memphis locksmith and physical security. Same guy who answers the phone shows up &mdash; no call center, no upsells, no runaround.</p>
+    <div class="hero-ctas">
+      <!-- REPLACE: real phone number goes in both href and label -->
+      <a class="btn btn-primary" href="tel:+19015550142"><svg class="icon"><use href="#i-phone"/></svg>Call (901) 555-0142</a>
+      <a class="btn btn-outline" href="#quote">Get a quote</a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main id="main">
-  <section class="trust" aria-label="Highlights">
-    <div><div class="ic"><i class="ti ti-clock-hour-4" aria-hidden="true"></i></div><div class="t">24/7 response</div><div class="s">Day or night, fast</div></div>
-    <div><div class="ic"><i class="ti ti-certificate" aria-hidden="true"></i></div><div class="t">Insured &amp; bonded</div><div class="s">Work you can trust</div></div>
-    <div><div class="ic"><i class="ti ti-receipt" aria-hidden="true"></i></div><div class="t">Upfront pricing</div><div class="s">No surprises</div></div>
-    <div><div class="ic"><i class="ti ti-map-pin" aria-hidden="true"></i></div><div class="t">Local &amp; trusted</div><div class="s">Memphis metro</div></div>
-  </section>
-
-  <div class="divide"><span></span><svg class="fdl" aria-hidden="true"><use href="#fdl"/></svg><span></span></div>
-
-  <section id="services">
-    <h2 class="sec-h">What we do</h2>
-    <p class="sec-sub">One contractor for homes and businesses &ndash; locks, hardware, and access.</p>
-    <div class="cards">
-      <div class="card"><div class="tile pink"><i class="ti ti-home" aria-hidden="true"></i></div><div class="ct">Residential locksmith</div><p>Rekeys, deadbolt installs, smart locks, lock changes after a move, and lockouts.</p></div>
-      <div class="card"><div class="tile pink"><i class="ti ti-building-store" aria-hidden="true"></i></div><div class="ct">Commercial security</div><p>Master-key systems, commercial-grade hardware, panic bars, and door closers.</p></div>
-      <div class="card"><div class="tile amber"><i class="ti ti-key" aria-hidden="true"></i></div><div class="ct">Lockouts &amp; emergencies</div><p>Locked out of a home, office, or vehicle? Fast 24/7 non-destructive entry.</p></div>
-      <div class="card"><div class="tile coral"><i class="ti ti-fingerprint" aria-hidden="true"></i></div><div class="ct">Access control</div><p>Keypads, fobs, and electronic access &ndash; design, install, and service.</p></div>
-      <div class="card"><div class="tile pink"><i class="ti ti-lock-cog" aria-hidden="true"></i></div><div class="ct">High-security locks</div><p>Restricted keyways, pick-resistant cylinders, and key control for peace of mind.</p></div>
-      <div class="card"><div class="tile amber"><i class="ti ti-tools" aria-hidden="true"></i></div><div class="ct">Repairs &amp; maintenance</div><p>Sticking locks, broken keys, worn hardware &ndash; repaired or replaced right.</p></div>
-    </div>
-  </section>
-
-  <div class="divide"><span></span><svg class="fdl" aria-hidden="true"><use href="#fdl"/></svg><span></span></div>
-
-  <section id="why" class="why">
-    <h2>Why Gaston</h2>
-    <div class="why-grid">
-      <div class="why-item"><i class="ti ti-shield-check" aria-hidden="true"></i><div><div class="h">Vetted &amp; accountable</div><p>Insured and bonded work you can stand behind.</p></div></div>
-      <div class="why-item"><i class="ti ti-bolt" aria-hidden="true"></i><div><div class="h">Fast arrival</div><p>Same-day service and true 24/7 emergency response.</p></div></div>
-      <div class="why-item"><i class="ti ti-user-check" aria-hidden="true"></i><div><div class="h">One point of contact</div><p>You deal directly with the contractor doing the work.</p></div></div>
-      <div class="why-item"><i class="ti ti-coin" aria-hidden="true"></i><div><div class="h">Honest quotes</div><p>Clear pricing before any work starts &ndash; no upsell games.</p></div></div>
-    </div>
-  </section>
-
-  <section id="quote" class="cta">
-    <div class="cta-grid">
+<section class="how">
+  <div class="container">
+    <p class="eyebrow">How I work</p>
+    <h2>Three steps. That's it.</h2>
+    <div class="how-grid">
       <div>
-        <span style="color:var(--gold-lt)"><svg class="fdl" aria-hidden="true" style="font-size:22px"><use href="#fdl"/></svg></span>
-        <h2>Get a free, no-obligation quote</h2>
-        <p class="blurb">Tell us what you need secured. We respond fast with honest pricing.</p>
-        <a class="call" href="tel:+19015550142"><i class="ti ti-phone" aria-hidden="true"></i>(901) 555-0142</a>
+        <div class="step-num">1</div>
+        <p class="step-title">Call me.</p>
+        <p class="step-body">Round the clock. I answer &mdash; not a dispatcher.</p>
       </div>
-      <!-- Web3Forms: replace access_key with yours (web3forms.com, free). -->
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-        <input type="hidden" name="subject" value="New quote request from the website">
-        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <div class="row"><label for="f-name">Name</label><input id="f-name" type="text" name="name" required></div>
-        <div class="row"><label for="f-phone">Phone</label><input id="f-phone" type="tel" name="phone" required></div>
-        <div class="row"><label for="f-email">Email</label><input id="f-email" type="email" name="email"></div>
-        <div class="row"><label for="f-msg">What do you need?</label><textarea id="f-msg" name="message" rows="3" required></textarea></div>
-        <button class="btn-lg btn-gold-lg" type="submit" style="width:100%">Request my quote</button>
-        <p class="privacy">We use your details only to respond to your request.</p>
-      </form>
+      <div>
+        <div class="step-num">2</div>
+        <p class="step-title">I roll.</p>
+        <p class="step-body">Usually there in under an hour anywhere metro.</p>
+      </div>
+      <div>
+        <div class="step-num">3</div>
+        <p class="step-title">You're back in.</p>
+        <p class="step-body">Fair flat price, told to you before I start.</p>
+      </div>
     </div>
-  </section>
-  </main>
+  </div>
+</section>
 
-  <footer class="foot">
-    <span class="fl"><svg class="fdl" aria-hidden="true"><use href="#fdl"/></svg> &copy; 2026 Gaston Security Contracting &middot; Memphis, TN</span>
-    <span>Insured &middot; Bonded</span>
-  </footer>
-</div>
+<section class="services" id="services">
+  <div class="container">
+    <p class="eyebrow">What I do</p>
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon-badge"><svg><use href="#i-key"/></svg></div>
+        <h3>Locksmith</h3>
+        <p>Lockouts, rekeys, key duplication &mdash; car, home, or business.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-badge"><svg><use href="#i-lock"/></svg></div>
+        <h3>Locks and hardware</h3>
+        <p>New locks, deadbolts, smart locks installed and serviced.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-badge"><svg><use href="#i-shield"/></svg></div>
+        <h3>Access control</h3>
+        <p>Keypads, fobs, and card readers for offices and rentals.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-badge"><svg><use href="#i-video"/></svg></div>
+        <h3>Cameras and alarms</h3>
+        <p>Low-voltage install for camera systems and intrusion alarms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-avatar">TR</div>
+    <div>
+      <p class="eyebrow">The guy behind the truck</p>
+      <h2>Hey, I'm Tyler.</h2>
+      <p>Seven years across locksmith, access control, and network security. Ran commercial installs for big MSPs before hanging out my own shingle. Now I run Gaston Security out of Memphis &mdash; same guy who picks up the phone shows up at your door.</p>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="container">
+    <p class="eyebrow">Where I work</p>
+    <h2>Memphis metro</h2>
+    <div class="chips">
+      <span class="chip">Memphis</span>
+      <span class="chip">Germantown</span>
+      <span class="chip">Collierville</span>
+      <span class="chip">Bartlett</span>
+      <span class="chip">Cordova</span>
+      <span class="chip">Lakeland</span>
+      <span class="chip">Arlington</span>
+      <span class="chip">Millington</span>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <p class="eyebrow">What folks say</p>
+    <h2>Real neighbors, real calls</h2>
+    <div class="tests-grid">
+      <div class="testimonial">
+        <div class="stars" aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="quote">&ldquo;Called at midnight &mdash; a human answered. Twenty minutes later I was back inside.&rdquo;</p>
+        <p class="attribution">Marcus D. &middot; Germantown</p>
+      </div>
+      <div class="testimonial">
+        <div class="stars" aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="quote">&ldquo;Rekeyed six rental units before lunch. Clean work, no upcharge for the smart lock we asked about.&rdquo;</p>
+        <p class="attribution">Angela P. &middot; Cordova</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-section" id="quote">
+  <div class="container">
+    <p class="eyebrow">Get a quote</p>
+    <h2>Tell me what you need.</h2>
+    <p class="lead">Non-emergency quotes only &mdash; if you're locked out right now, just call.</p>
+    <form class="quote-form" action="https://api.web3forms.com/submit" method="POST">
+      <!-- REPLACE: paste your Web3Forms access key between the quotes -->
+      <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-ACCESS-KEY">
+      <input type="hidden" name="subject" value="New quote request from gaston-security.com">
+      <input type="hidden" name="from_name" value="Gaston Security website">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="field">
+        <label for="q-name">Your name</label>
+        <input type="text" id="q-name" name="name" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="q-phone">Phone</label>
+        <input type="tel" id="q-phone" name="phone" required autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="q-message">What do you need?</label>
+        <textarea id="q-message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send request</button>
+    </form>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <p class="eyebrow">Locked out right now?</p>
+    <h2>One call. One truck.<br>One guy.</h2>
+    <p class="lead">Emergency lockouts answered 24/7 across the Memphis metro.</p>
+    <div class="cta-ctas">
+      <!-- REPLACE: real phone number goes in both href and label -->
+      <a class="btn btn-mustard" href="tel:+19015550142"><svg class="icon"><use href="#i-phone"/></svg>Call (901) 555-0142</a>
+      <a class="btn btn-outline-light" href="#quote">Request a quote</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Gaston Security Contracting &middot; Memphis, TN</p>
+  <p class="fine">Insured and bonded &middot; Local, independent, since 2023</p>
+</footer>
+
 </body>
 </html>
