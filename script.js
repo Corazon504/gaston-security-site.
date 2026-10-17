@@ -29,7 +29,7 @@
   });
 
   if (!CONFIG.supabaseUrl) {
-    photoHint.textContent = "Photos coming soon — for now, text one to 901-730-9691 after you send this.";
+    photoHint.textContent = "Photos coming soon — for now, text one to (901) 730-9691 after you send this.";
     photoInput.disabled = true;
   }
 
@@ -99,7 +99,7 @@
       .then(function (photoUrl) {
         if (photoUrl) { data.photo_url = photoUrl; }
       }, function () {
-        photoNote = " (The photo didn't attach — text it to 901-730-9691.)";
+        photoNote = " (The photo didn't attach — text it to (901) 730-9691.)";
       })
       .then(function () {
         // Put everything in one readable email body
@@ -133,7 +133,7 @@
       .catch(function (err) {
         var msg = /captcha/i.test(err.message)
           ? "Please complete the “I am human” check and send again."
-          : "Couldn't send. Call or text 901-730-9691 instead.";
+          : "Couldn't send. Call or text (901) 730-9691 instead.";
         setStatus(msg, "err");
       })
       .finally(function () { btn.disabled = false; });

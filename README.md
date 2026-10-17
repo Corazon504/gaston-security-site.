@@ -1,8 +1,8 @@
 # Gaston Security — website
 
-Live: https://DOMAIN/ · QR short link: https://DOMAIN/scan → `/?utm_source=qr`
+Live: https://gaston-security.com/ · QR short link: https://gaston-security.com/scan → `/?utm_source=qr`
 
-Plain HTML/CSS/JS, hosted on Cloudflare Pages, deployed automatically from the `main` branch of this repo.
+Plain HTML/CSS/JS, hosted on Cloudflare Workers (static assets), deployed automatically from the `main` branch of this repo.
 
 ## Edit the site
 
@@ -12,7 +12,7 @@ Plain HTML/CSS/JS, hosted on Cloudflare Pages, deployed automatically from the `
 | Colors, spacing, fonts | `style.css` — tokens at the top |
 | Where the QR code lands | `_redirects` — the `/scan` line. Reprint nothing. |
 | Form email key / photo upload settings | `index.html` (`access_key`) and `script.js` (`CONFIG`) |
-| Logo | `logo.svg` (also `favicon.svg`); then rerun `python3 tools/render.py` for `og.png` and the touch icon |
+| Logo | the inline SVG at the top of `index.html`; then rerun `python3 tools/render.py` for `og.png` and the touch icon |
 
 ## Redeploy
 
@@ -34,13 +34,13 @@ A bad deploy can be rolled back there in one click ("Rollback to this deployment
 - Delivered by **Web3Forms** (free tier, 250/month) to the email set in the Web3Forms dashboard.
 - Spam protection: hidden honeypot field + hCaptcha ("I am human" box).
 - Optional photo and a backup copy of every submission go to Supabase if `CONFIG` in `script.js` is filled in.
-- Text alerts: in Gmail/Yahoo, create a filter for emails with subject "Service request from gastonsecurity.com" that forwards to your carrier's email-to-SMS address (e.g. `9017309691@vtext.com` for Verizon, `@txt.att.net` for AT&T, `@tmomail.net` for T-Mobile).
+- Text alerts: in Gmail/Yahoo, create a filter for emails with subject "Service request from gaston-security.com" that forwards to your carrier's email-to-SMS address (e.g. `9017309691@vtext.com` for Verizon, `@txt.att.net` for AT&T, `@tmomail.net` for T-Mobile).
 
 ## QR codes
 
 `qr/` holds print-ready files. Regenerate (and self-test) with:
 ```
-python3 tools/make_qr.py https://DOMAIN/scan
+python3 tools/make_qr.py https://gaston-security.com/scan
 ```
 - `qr-card.*` — 1 in, business cards
 - `qr-sticker.*` — 3 in, doors and the van

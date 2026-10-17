@@ -21,8 +21,8 @@ with sync_playwright() as p:
     pg.screenshot(path=os.path.join(ROOT, "og.png"))
     # Apple touch icon: logo on red, 180x180
     pg = b.new_page(viewport={"width": 180, "height": 180})
-    pg.set_content('<body style="margin:0;background:#8E1B1B;display:flex;align-items:center;justify-content:center;height:180px">'
-                   f'<img src="{base}/logo.svg" style="width:120px"></body>')
+    pg.set_content('<body style="margin:0;background:#B23A20;display:flex;align-items:center;justify-content:center;height:180px">'
+                   '<svg viewBox="0 0 24 24" width="120" height="120" fill="none" stroke="#F5EDD8" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="12" r="3"/><path d="M11 12h9M17 12v3M20 12v3"/></svg></body>')
     pg.wait_for_timeout(300)
     pg.screenshot(path=os.path.join(ROOT, "apple-touch-icon.png"))
     # Previews
