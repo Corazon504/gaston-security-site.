@@ -4,7 +4,7 @@ Run from the repo root:  python3 tools/render.py
 import http.server, threading, functools, os, sys
 from playwright.sync_api import sync_playwright
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'public')
 OUT = sys.argv[1] if len(sys.argv) > 1 else ROOT
 PORT = 8765
 
@@ -17,7 +17,7 @@ with sync_playwright() as p:
     b = p.chromium.launch()
     # Open Graph image
     pg = b.new_page(viewport={"width": 1200, "height": 630}, device_scale_factor=1)
-    pg.goto(f"{base}/tools/og.html"); pg.wait_for_timeout(1500)
+    pg.set_content(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "og.html")).read()); pg.wait_for_timeout(1500)
     pg.screenshot(path=os.path.join(ROOT, "og.png"))
     # Apple touch icon: logo on red, 180x180
     pg = b.new_page(viewport={"width": 180, "height": 180})

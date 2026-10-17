@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFont
 import cv2, numpy as np
 
 URL = sys.argv[1] if len(sys.argv) > 1 else "https://gastonsecurity.com/scan"
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'public')
 OUT = os.path.join(ROOT, "qr"); os.makedirs(OUT, exist_ok=True)
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
