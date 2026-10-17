@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /scan
+Sitemap: https://gastonsecurity.com/sitemap.xml

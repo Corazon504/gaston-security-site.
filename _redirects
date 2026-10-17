@@ -1,0 +1,5 @@
+# QR codes point here. Change the destination any time without reprinting.
+/scan  /?utm_source=qr  302
+
+# www -> root (takes effect once www.gastonsecurity.com is added as a custom domain in Pages)
+https://www.gastonsecurity.com/*  https://gastonsecurity.com/:splat  301
