@@ -1,5 +1,2 @@
 # QR codes point here. Change the destination any time without reprinting.
 /scan  /?utm_source=qr  302
-
-# www -> root (takes effect once www.gaston-security.com is added as a custom domain on the Worker)
-https://www.gaston-security.com/*  https://gaston-security.com/:splat  301
