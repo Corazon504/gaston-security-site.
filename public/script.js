@@ -102,14 +102,10 @@
         photoNote = " (The photo didn't attach — text it to (901) 730-9691.)";
       })
       .then(function () {
-        // Put everything in one readable email body
-        data.message =
-          data.message +
-          "\n\n— Site: " + data.site_address +
-          "\n— Phone: " + data.phone +
-          (data.email ? "\n— Email: " + data.email : "") +
-          (data.photo_url ? "\n— Photo: " + data.photo_url : "") +
-          "\n— Source: " + utm;
+        // Fields already appear one per line in the email; just make the subject scannable on a phone
+        data.subject = "Service request: " + data.name + " \u2014 " + data.site_address +
+          (utm === "qr" ? " (QR scan)" : "");
+        if (data.photo_url) data.message += "\n\nPhoto: " + data.photo_url;
         return Promise.all([
           logToSupabase(data),
           fetch("https://api.web3forms.com/submit", {
