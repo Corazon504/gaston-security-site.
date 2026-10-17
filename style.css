@@ -151,3 +151,45 @@ footer a { text-decoration: underline; text-underline-offset: 2px; }
   .callbar { display: none; }
   body { padding-bottom: 0; }
 }
+
+/* ---- v2 additions ---- */
+/* Promise strip in the hero: the three things a customer gets */
+.promise {
+  list-style: none; margin: 1.75rem 0 0; padding: 1rem 0 0;
+  border-top: 1px solid rgba(255,255,255,.35);
+  display: grid; gap: .75rem;
+}
+@media (min-width: 30rem) { .promise { grid-template-columns: repeat(3, 1fr); gap: 1rem; } }
+.promise li { display: grid; gap: .1rem; }
+.promise strong { font-size: 1.05rem; }
+.promise span { font-size: .9rem; opacity: .85; }
+
+/* Service icons */
+.services li { display: grid; grid-template-columns: 2rem 1fr; gap: .9rem; align-items: start; }
+.ico { width: 2rem; height: 2rem; fill: none; stroke: var(--red-bright); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; margin-top: .1rem; }
+
+/* How it works: a real sequence, so numbered */
+.steps { margin: 0; padding: 0; list-style: none; counter-reset: step; display: grid; gap: 1rem; }
+.steps li { position: relative; padding-left: 3.25rem; min-height: 2.5rem; }
+.steps li::before {
+  counter-increment: step; content: counter(step);
+  position: absolute; left: 0; top: -.1rem;
+  width: 2.4rem; height: 2.4rem; border-radius: 50%;
+  background: var(--red); color: var(--white);
+  font-family: var(--display); font-style: italic; font-weight: 800; font-size: 1.3rem;
+  display: flex; align-items: center; justify-content: center;
+}
+@media (min-width: 40rem) { .steps { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } }
+
+/* Why + mission */
+.about { display: grid; gap: 1.75rem; }
+.mission {
+  margin: 0; padding: 1.25rem 1.25rem 1.1rem;
+  background: var(--red); color: var(--white); border-radius: 8px;
+}
+.mission p {
+  margin: 0 0 .75rem; font-family: var(--display); font-style: italic; font-weight: 800;
+  font-size: 1.25rem; line-height: 1.35;
+}
+.mission footer { font-size: .95rem; opacity: .9; }
+.hint a { color: var(--red); }
